@@ -8,7 +8,7 @@ import { OrdersService } from '../../services/orders.service';
 })
 export class PageListOrdersComponent implements OnInit {
   constructor(private ordersService: OrdersService) {
-    this.ordersService.collection$.subscribe((data)=> console.log(data));
+    this.ordersService.collection$.subscribe((data) => console.log(data));
     console.log('toto');
   }
 
