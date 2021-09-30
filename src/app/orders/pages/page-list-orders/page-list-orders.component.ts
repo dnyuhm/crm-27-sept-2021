@@ -23,7 +23,6 @@ export class PageListOrdersComponent implements OnInit {
     this.ordersService.collection$.subscribe(
       (data) => (this.collection = data)
     );
-    console.log('toto');
   }
 
   ngOnInit(): void {}
