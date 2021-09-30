@@ -20,9 +20,10 @@ export class PageListOrdersComponent implements OnInit {
     'State',
   ];
   constructor(private ordersService: OrdersService) {
-    this.ordersService.collection$.subscribe(
-      (data) => (this.collection = data)
-    );
+    this.ordersService.collection$.subscribe((data) => {
+      this.collection = data;
+      console.log(data);
+    });
   }
 
   ngOnInit(): void {}
